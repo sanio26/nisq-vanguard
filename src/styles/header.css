@@ -1,0 +1,535 @@
+/* ============================================================
+   NISQ VANGUARD
+   GLOBAL HEADER
+   Premium dark defence technology navigation
+   ============================================================ */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+
+  background: rgba(7, 19, 31, 0.97);
+
+  border-bottom: 1px solid #1d4056;
+
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.header-inner {
+  width: min(1280px, calc(100% - 48px));
+  min-height: 82px;
+
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+}
+
+/* ============================================================
+   BRAND
+   ============================================================ */
+
+.brand {
+  min-width: 0;
+
+  display: inline-flex;
+  align-items: center;
+
+  flex-shrink: 0;
+
+  gap: 12px;
+
+  color: #f2f7fa;
+  text-decoration: none;
+
+  outline: none;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid #2a9fd0;
+
+  background: transparent;
+
+  color: #2a9fd0;
+
+  font-size: 0.82rem;
+  line-height: 1;
+  font-weight: 800;
+
+  letter-spacing: 0.04em;
+
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease;
+}
+
+.brand:hover .brand-mark {
+  background: rgba(42, 159, 208, 0.08);
+
+  border-color: #20b8d8;
+
+  color: #20b8d8;
+}
+
+.brand:focus-visible {
+  outline: 2px solid #20b8d8;
+  outline-offset: 5px;
+}
+
+.brand-text {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  gap: 5px;
+}
+
+.brand-text strong {
+  display: block;
+
+  color: #f2f7fa;
+
+  font-size: 0.91rem;
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: 0.055em;
+
+  white-space: nowrap;
+}
+
+.brand-text small {
+  display: block;
+
+  color: #718796;
+
+  font-size: 0.59rem;
+  line-height: 1;
+
+  font-weight: 700;
+
+  letter-spacing: 0.13em;
+
+  white-space: nowrap;
+}
+
+/* ============================================================
+   DESKTOP NAVIGATION
+   ============================================================ */
+
+.desktop-nav {
+  min-width: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 27px;
+
+  margin-left: auto;
+}
+
+.desktop-nav a {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 0;
+
+  color: #9cb0be;
+
+  text-decoration: none;
+
+  font-size: 0.82rem;
+  line-height: 1;
+
+  font-weight: 650;
+
+  white-space: nowrap;
+
+  transition:
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.desktop-nav a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 100%;
+
+  bottom: 1px;
+
+  height: 1px;
+
+  background: #20b8d8;
+
+  transition: right 180ms ease;
+}
+
+.desktop-nav a:hover {
+  color: #f2f7fa;
+
+  transform: translateY(-1px);
+}
+
+.desktop-nav a:hover::after {
+  right: 0;
+}
+
+.desktop-nav a:focus-visible {
+  outline: 2px solid #20b8d8;
+  outline-offset: 5px;
+}
+
+/* ============================================================
+   CONSULTATION CTA
+   ============================================================ */
+
+.header-cta {
+  min-height: 44px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+
+  gap: 11px;
+
+  padding: 0 18px;
+
+  border: 1px solid #2a9fd0;
+
+  background: #2a9fd0;
+
+  color: #06131e;
+
+  text-decoration: none;
+
+  font-size: 0.7rem;
+  line-height: 1;
+
+  font-weight: 850;
+
+  letter-spacing: 0.045em;
+
+  white-space: nowrap;
+
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.header-cta span {
+  display: inline-flex;
+  align-items: center;
+
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.header-cta:hover {
+  background: #20b8d8;
+
+  border-color: #20b8d8;
+
+  color: #06131e;
+
+  transform: translateY(-1px);
+}
+
+.header-cta:active {
+  transform: translateY(0);
+}
+
+.header-cta:focus-visible {
+  outline: 2px solid #20b8d8;
+  outline-offset: 4px;
+}
+
+/* ============================================================
+   MOBILE MENU BUTTON
+   ============================================================ */
+
+.mobile-menu-button {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  margin-left: auto;
+
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 42px;
+
+  padding: 0;
+
+  border: 1px solid #1d4056;
+
+  background: #102a3d;
+
+  color: #f2f7fa;
+
+  cursor: pointer;
+
+  transition:
+    border-color 180ms ease,
+    color 180ms ease,
+    background 180ms ease;
+}
+
+.mobile-menu-button:hover {
+  border-color: #2a9fd0;
+
+  color: #20b8d8;
+
+  background: #0b1f33;
+}
+
+.mobile-menu-button:focus-visible {
+  outline: 2px solid #20b8d8;
+  outline-offset: 3px;
+}
+
+/* ============================================================
+   MOBILE NAVIGATION
+   ============================================================ */
+
+.mobile-nav {
+  display: none;
+
+  width: 100%;
+
+  padding: 10px 16px 20px;
+
+  background: #0b1f33;
+
+  border-top: 1px solid #1d4056;
+}
+
+.mobile-nav a {
+  display: block;
+
+  padding: 15px 8px;
+
+  border-bottom: 1px solid #1d4056;
+
+  color: #d8e5eb;
+
+  text-decoration: none;
+
+  font-size: 0.88rem;
+  line-height: 1.3;
+
+  font-weight: 650;
+
+  transition:
+    color 180ms ease,
+    padding-left 180ms ease,
+    background 180ms ease;
+}
+
+.mobile-nav a:hover {
+  color: #20b8d8;
+
+  padding-left: 12px;
+
+  background: rgba(42, 159, 208, 0.04);
+}
+
+.mobile-nav a:focus-visible {
+  outline: 2px solid #20b8d8;
+  outline-offset: -2px;
+}
+
+.mobile-nav a:last-child {
+  margin-top: 12px;
+
+  border: 1px solid #2a9fd0;
+
+  background: #2a9fd0;
+
+  color: #06131e;
+
+  text-align: center;
+
+  font-size: 0.72rem;
+
+  font-weight: 850;
+
+  letter-spacing: 0.04em;
+}
+
+.mobile-nav a:last-child:hover {
+  padding-left: 8px;
+
+  border-color: #20b8d8;
+
+  background: #20b8d8;
+
+  color: #06131e;
+}
+
+/* ============================================================
+   TABLET
+   ============================================================ */
+
+@media (max-width: 1180px) {
+  .header-inner {
+    width: min(100% - 36px, 1280px);
+
+    gap: 20px;
+  }
+
+  .desktop-nav {
+    gap: 19px;
+  }
+
+  .desktop-nav a {
+    font-size: 0.76rem;
+  }
+
+  .header-cta {
+    padding: 0 13px;
+
+    font-size: 0.64rem;
+  }
+
+  .brand-text strong {
+    font-size: 0.84rem;
+  }
+
+  .brand-text small {
+    font-size: 0.54rem;
+  }
+}
+
+/* ============================================================
+   MOBILE
+   ============================================================ */
+
+@media (max-width: 850px) {
+  .header-inner {
+    width: calc(100% - 32px);
+
+    min-height: 70px;
+  }
+
+  .desktop-nav,
+  .header-cta {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: inline-flex;
+  }
+
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+
+    flex-basis: 38px;
+  }
+
+  .brand-text strong {
+    font-size: 0.82rem;
+  }
+
+  .brand-text small {
+    font-size: 0.53rem;
+  }
+
+  .mobile-nav {
+    display: flex;
+
+    flex-direction: column;
+  }
+}
+
+/* ============================================================
+   SMALL MOBILE
+   ============================================================ */
+
+@media (max-width: 480px) {
+  .header-inner {
+    width: calc(100% - 24px);
+  }
+
+  .brand {
+    gap: 9px;
+  }
+
+  .brand-mark {
+    width: 36px;
+    height: 36px;
+
+    flex-basis: 36px;
+
+    font-size: 0.74rem;
+  }
+
+  .brand-text {
+    gap: 4px;
+  }
+
+  .brand-text strong {
+    font-size: 0.74rem;
+
+    letter-spacing: 0.045em;
+  }
+
+  .brand-text small {
+    font-size: 0.47rem;
+
+    letter-spacing: 0.075em;
+  }
+
+  .mobile-menu-button {
+    width: 40px;
+    height: 40px;
+
+    flex-basis: 40px;
+  }
+}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .brand-mark,
+  .desktop-nav a,
+  .desktop-nav a::after,
+  .header-cta,
+  .mobile-menu-button,
+  .mobile-nav a {
+    transition: none;
+  }
+}

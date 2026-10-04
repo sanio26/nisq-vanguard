@@ -1,0 +1,925 @@
+.about-page {
+  background: #07131f;
+  color: #f2f7fa;
+  overflow: hidden;
+}
+
+.about-container {
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.about-eyebrow {
+  margin: 0 0 18px;
+  color: #20b8d8;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.about-hero {
+  position: relative;
+  padding: 110px 0 120px;
+  border-bottom: 1px solid #1d4056;
+}
+
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(420px, 0.95fr);
+  gap: 80px;
+  align-items: center;
+}
+
+.about-hero-copy h1 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(3rem, 5vw, 5.6rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  font-weight: 750;
+}
+
+.about-hero-copy h1 span,
+.about-research-copy h2 span,
+.about-final-card h2 span {
+  color: #2a9fd0;
+}
+
+.about-hero-description {
+  max-width: 650px;
+  margin: 30px 0 0;
+  color: #9cb0be;
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+
+.about-hero-actions,
+.about-final-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.about-primary-button,
+.about-secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 19px;
+  text-decoration: none;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background 180ms ease;
+}
+
+.about-primary-button {
+  background: #2a9fd0;
+  color: #06131f;
+  border: 1px solid #2a9fd0;
+}
+
+.about-secondary-button {
+  background: transparent;
+  color: #dce8ee;
+  border: 1px solid #1d4056;
+}
+
+.about-primary-button:hover,
+.about-secondary-button:hover {
+  transform: translateY(-2px);
+}
+
+.about-primary-button:hover {
+  background: #20b8d8;
+  border-color: #20b8d8;
+}
+
+.about-secondary-button:hover {
+  border-color: #2a9fd0;
+}
+
+/* ==========================================================
+   HERO ARCHITECTURE
+   ========================================================== */
+
+.about-hero-visual {
+  min-width: 0;
+}
+
+.about-architecture-frame {
+  position: relative;
+  min-height: 500px;
+  padding: 22px;
+  border: 1px solid #1d4056;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(42, 159, 208, 0.07),
+      transparent 45%
+    ),
+    #0b1f33;
+}
+
+.about-architecture-header,
+.about-architecture-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #718796;
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.about-live-indicator {
+  color: #20b8d8;
+}
+
+.about-live-indicator::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background: #20b8d8;
+}
+
+.about-architecture {
+  position: relative;
+  min-height: 390px;
+}
+
+.about-architecture-node {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-width: 120px;
+  min-height: 72px;
+  padding: 12px;
+  border: 1px solid #1d4056;
+  background: #102a3d;
+  color: #dce8ee;
+  text-align: center;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+}
+
+.about-architecture-node svg {
+  color: #20b8d8;
+}
+
+.about-node-core {
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  height: 120px;
+  transform: translate(-50%, -50%);
+  border-color: #2a9fd0;
+  box-shadow: 0 0 0 8px rgba(42, 159, 208, 0.05);
+}
+
+.about-node-core strong {
+  font-size: 1.05rem;
+  letter-spacing: 0.14em;
+}
+
+.about-node-core span {
+  color: #718796;
+}
+
+.about-node-one {
+  top: 14%;
+  left: 4%;
+}
+
+.about-node-two {
+  top: 14%;
+  right: 4%;
+}
+
+.about-node-three {
+  bottom: 12%;
+  left: 4%;
+}
+
+.about-node-four {
+  bottom: 12%;
+  right: 4%;
+}
+
+.about-architecture-line {
+  position: absolute;
+  height: 1px;
+  background: #1d4056;
+  transform-origin: left center;
+}
+
+.about-line-one {
+  width: 34%;
+  top: 31%;
+  left: 22%;
+  transform: rotate(24deg);
+}
+
+.about-line-two {
+  width: 34%;
+  top: 31%;
+  right: 22%;
+  transform: rotate(156deg);
+}
+
+.about-line-three {
+  width: 34%;
+  bottom: 31%;
+  left: 22%;
+  transform: rotate(-24deg);
+}
+
+.about-line-four {
+  width: 34%;
+  bottom: 31%;
+  right: 22%;
+  transform: rotate(-156deg);
+}
+
+.about-architecture-footer {
+  padding-top: 16px;
+  border-top: 1px solid #1d4056;
+}
+
+/* ==========================================================
+   SECTION HEADINGS
+   ========================================================== */
+
+.about-positioning-section,
+.about-framework-section,
+.about-principles-section,
+.about-capabilities-section,
+.about-ecosystem-section {
+  padding: 105px 0;
+  border-bottom: 1px solid #1d4056;
+}
+
+.about-section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 54px;
+}
+
+.about-section-heading h2 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(2rem, 3.4vw, 3.6rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.about-heading-index {
+  color: #718796;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+/* ==========================================================
+   POSITIONING
+   ========================================================== */
+
+.about-positioning-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 90px;
+}
+
+.about-positioning-main {
+  max-width: 800px;
+}
+
+.about-large-statement {
+  margin: 0 0 30px;
+  color: #dce8ee;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 1.18;
+  letter-spacing: -0.035em;
+}
+
+.about-large-statement strong {
+  color: #2a9fd0;
+  font-weight: 650;
+}
+
+.about-positioning-main > p:not(.about-large-statement) {
+  margin: 0 0 18px;
+  color: #9cb0be;
+  line-height: 1.8;
+}
+
+.about-positioning-side {
+  border-top: 1px solid #1d4056;
+}
+
+.about-side-item {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid #1d4056;
+}
+
+.about-side-item > span {
+  color: #20b8d8;
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.about-side-item strong {
+  color: #f2f7fa;
+  font-size: 0.95rem;
+}
+
+.about-side-item p {
+  margin: 7px 0 0;
+  color: #718796;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+/* ==========================================================
+   FRAMEWORK
+   ========================================================== */
+
+.about-framework {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #1d4056;
+  border-left: 1px solid #1d4056;
+}
+
+.about-framework-card {
+  min-height: 390px;
+  padding: 28px;
+  border-right: 1px solid #1d4056;
+  border-bottom: 1px solid #1d4056;
+  background: #0b1f33;
+}
+
+.about-framework-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #20b8d8;
+}
+
+.about-framework-top span {
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+.about-framework-label {
+  margin: 75px 0 12px;
+  color: #20b8d8;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.about-framework-card h3 {
+  margin: 0;
+  color: #f2f7fa;
+  font-size: 1.45rem;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+.about-framework-card > p:not(.about-framework-label) {
+  margin: 18px 0 30px;
+  color: #9cb0be;
+  line-height: 1.7;
+}
+
+.about-framework-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #dce8ee;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+}
+
+.about-framework-card a:hover {
+  color: #20b8d8;
+}
+
+/* ==========================================================
+   PRINCIPLES
+   ========================================================== */
+
+.about-principles-section {
+  background: #0b1f33;
+}
+
+.about-principles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: #1d4056;
+}
+
+.about-principle-card {
+  min-height: 290px;
+  padding: 30px;
+  background: #07131f;
+}
+
+.about-principle-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #20b8d8;
+}
+
+.about-principle-header span {
+  font-size: 0.7rem;
+  font-weight: 800;
+}
+
+.about-principle-card h3 {
+  margin: 70px 0 15px;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+}
+
+.about-principle-card p {
+  margin: 0;
+  color: #9cb0be;
+  line-height: 1.7;
+}
+
+/* ==========================================================
+   CAPABILITIES
+   ========================================================== */
+
+.about-capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.about-capability-card {
+  position: relative;
+  min-height: 250px;
+  padding: 28px;
+  border: 1px solid #1d4056;
+  background: #0b1f33;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
+}
+
+.about-capability-card:hover {
+  transform: translateY(-4px);
+  border-color: #2a9fd0;
+}
+
+.about-capability-number {
+  margin-bottom: 48px;
+  color: #718796;
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.about-capability-card svg {
+  color: #20b8d8;
+}
+
+.about-capability-card h3 {
+  margin: 18px 0 10px;
+  font-size: 1.05rem;
+}
+
+.about-capability-card p {
+  margin: 0;
+  color: #9cb0be;
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+/* ==========================================================
+   RESEARCH
+   ========================================================== */
+
+.about-research-section {
+  padding: 105px 0;
+  border-bottom: 1px solid #1d4056;
+}
+
+.about-research-panel {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  min-height: 520px;
+  border: 1px solid #1d4056;
+  background: #0b1f33;
+}
+
+.about-research-copy {
+  padding: 55px;
+}
+
+.about-research-copy h2 {
+  max-width: 650px;
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 4.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+.about-research-copy > p:not(.about-eyebrow) {
+  max-width: 610px;
+  margin: 28px 0;
+  color: #9cb0be;
+  line-height: 1.8;
+}
+
+.about-research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.about-research-tags span {
+  padding: 8px 10px;
+  border: 1px solid #1d4056;
+  color: #9cb0be;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+}
+
+.about-research-visual {
+  display: grid;
+  place-items: center;
+  padding: 40px;
+  border-left: 1px solid #1d4056;
+  background: #07131f;
+}
+
+.about-research-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 120px);
+  gap: 65px;
+  align-items: center;
+}
+
+.about-research-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 18px 10px;
+  border: 1px solid #1d4056;
+  color: #9cb0be;
+  font-size: 0.6rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.about-research-node svg {
+  color: #20b8d8;
+}
+
+.about-research-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 135px;
+  height: 135px;
+  transform: translate(-50%, -50%);
+  border-color: #2a9fd0;
+  background: #102a3d;
+}
+
+.about-research-center strong {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+}
+
+.about-research-center span {
+  color: #718796;
+}
+
+/* ==========================================================
+   ECOSYSTEM
+   ========================================================== */
+
+.about-ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.about-ecosystem-card {
+  min-height: 290px;
+  padding: 25px;
+  border: 1px solid #1d4056;
+  background: #0b1f33;
+  color: inherit;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
+}
+
+.about-ecosystem-card:hover {
+  transform: translateY(-4px);
+  border-color: #2a9fd0;
+}
+
+.about-ecosystem-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: #20b8d8;
+}
+
+.about-ecosystem-top span {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.about-ecosystem-card h3 {
+  margin: 70px 0 13px;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.about-ecosystem-card p {
+  margin: 0;
+  color: #9cb0be;
+  font-size: 0.86rem;
+  line-height: 1.65;
+}
+
+.about-ecosystem-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 28px;
+  color: #dce8ee;
+  font-size: 0.67rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+/* ==========================================================
+   FINAL CTA
+   ========================================================== */
+
+.about-final-section {
+  padding: 105px 0;
+}
+
+.about-final-card {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 55px;
+  border: 1px solid #1d4056;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(42, 159, 208, 0.09),
+      transparent 55%
+    ),
+    #0b1f33;
+}
+
+.about-final-card h2 {
+  max-width: 750px;
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+.about-final-card > div:first-child > p:last-child {
+  max-width: 650px;
+  margin: 24px 0 0;
+  color: #9cb0be;
+  line-height: 1.75;
+}
+
+.about-final-actions {
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 1050px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .about-hero-copy h1 {
+    max-width: 850px;
+  }
+
+  .about-positioning-grid,
+  .about-research-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .about-research-visual {
+    min-height: 430px;
+    border-top: 1px solid #1d4056;
+    border-left: 0;
+  }
+
+  .about-ecosystem-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-final-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .about-final-actions {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about-container {
+    width: min(100% - 32px, 700px);
+  }
+
+  .about-hero,
+  .about-positioning-section,
+  .about-framework-section,
+  .about-principles-section,
+  .about-capabilities-section,
+  .about-research-section,
+  .about-ecosystem-section,
+  .about-final-section {
+    padding: 75px 0;
+  }
+
+  .about-framework,
+  .about-principles-grid,
+  .about-capabilities-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-framework-card {
+    min-height: 320px;
+  }
+
+  .about-capability-card {
+    min-height: 220px;
+  }
+
+  .about-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 38px;
+  }
+
+  .about-architecture-frame {
+    min-height: 430px;
+  }
+
+  .about-architecture {
+    min-height: 325px;
+  }
+
+  .about-node-core {
+    width: 125px;
+    height: 100px;
+  }
+
+  .about-architecture-node {
+    min-width: 100px;
+  }
+
+  .about-node-one,
+  .about-node-three {
+    left: 0;
+  }
+
+  .about-node-two,
+  .about-node-four {
+    right: 0;
+  }
+
+  .about-research-copy {
+    padding: 35px 28px;
+  }
+
+  .about-research-grid {
+    transform: scale(0.88);
+  }
+}
+
+@media (max-width: 560px) {
+  .about-container {
+    width: min(100% - 24px, 520px);
+  }
+
+  .about-hero {
+    padding: 65px 0 75px;
+  }
+
+  .about-hero-copy h1 {
+    font-size: 2.75rem;
+  }
+
+  .about-hero-description {
+    font-size: 0.98rem;
+  }
+
+  .about-hero-actions,
+  .about-final-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .about-primary-button,
+  .about-secondary-button {
+    width: 100%;
+  }
+
+  .about-architecture-frame {
+    min-height: 390px;
+    padding: 15px;
+  }
+
+  .about-architecture {
+    min-height: 295px;
+  }
+
+  .about-architecture-node {
+    min-width: 86px;
+    padding: 8px;
+    font-size: 0.5rem;
+  }
+
+  .about-node-core {
+    width: 105px;
+    height: 85px;
+  }
+
+  .about-node-core strong {
+    font-size: 0.85rem;
+  }
+
+  .about-research-visual {
+    overflow: hidden;
+    padding: 20px;
+  }
+
+  .about-research-grid {
+    transform: scale(0.72);
+  }
+
+  .about-ecosystem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-final-card {
+    padding: 32px 25px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-primary-button,
+  .about-secondary-button,
+  .about-capability-card,
+  .about-ecosystem-card {
+    transition: none;
+  }
+}

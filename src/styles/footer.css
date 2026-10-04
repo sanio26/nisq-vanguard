@@ -1,0 +1,142 @@
+.site-footer {
+  margin-top: 0;
+  background: #0b1f33;
+  color: #dceaf0;
+  border-top: 1px solid #163a52;
+}
+
+.footer-grid {
+  width: min(1280px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 72px 0 64px;
+  display: grid;
+  grid-template-columns: 1.7fr 1fr 1fr 1.25fr;
+  gap: 56px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.footer-brand strong {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 0.065em;
+  font-weight: 800;
+}
+
+.footer-brand span {
+  color: #8fa8b8;
+  font-size: 0.62rem;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+}
+
+.footer-grid > div:first-child p {
+  max-width: 260px;
+  margin: 24px 0 0;
+  color: #a9bdc9;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.footer-grid h3 {
+  margin: 0 0 18px;
+  color: #ffffff;
+  font-size: 0.78rem;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+}
+
+.footer-grid a {
+  width: fit-content;
+  display: block;
+  margin: 0 0 12px;
+  color: #a9bdc9;
+  text-decoration: none;
+  font-size: 0.86rem;
+  line-height: 1.45;
+  transition:
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.footer-grid a:hover {
+  color: #ffffff;
+  transform: translateX(3px);
+}
+
+.footer-bottom {
+  width: min(1280px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 22px 0 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-top: 1px solid rgba(213, 229, 236, 0.16);
+  color: #7892a3;
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 44px 32px;
+  }
+
+  .footer-grid > div:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .footer-grid {
+    width: calc(100% - 32px);
+    padding: 54px 0 44px;
+    grid-template-columns: 1fr 1fr;
+    gap: 38px 24px;
+  }
+
+  .footer-grid > div:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .footer-grid > div:first-child p {
+    margin-top: 18px;
+  }
+
+  .footer-bottom {
+    width: calc(100% - 32px);
+    padding: 20px 0 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 420px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-grid > div:first-child {
+    grid-column: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer-grid a {
+    transition: none;
+  }
+}

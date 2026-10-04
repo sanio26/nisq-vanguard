@@ -1,0 +1,959 @@
+.cybershield-page {
+  min-height: 100vh;
+  background: #07131f;
+  color: #f2f7fa;
+}
+
+.cybershield-container {
+  width: min(1320px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.cybershield-hero {
+  padding: 112px 0 90px;
+  border-bottom: 1px solid #18384d;
+}
+
+.cybershield-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.02fr) minmax(500px, 0.98fr);
+  gap: 82px;
+  align-items: center;
+}
+
+.cybershield-eyebrow,
+.cybershield-section-label {
+  color: #20b8d8;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.cybershield-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.cybershield-eyebrow-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #20b8d8;
+}
+
+.cybershield-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+  padding: 7px 11px;
+  border: 1px solid #24516a;
+  background: #0b1f33;
+  color: #8fb0c1;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.cybershield-status svg {
+  color: #20b8d8;
+}
+
+.cybershield-hero h1 {
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(48px, 5.5vw, 82px);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  font-weight: 800;
+}
+
+.cybershield-hero h1 span,
+.cybershield-intro h2 span,
+.cybershield-section-heading h2 span,
+.cybershield-capability-card h3 span,
+.cybershield-copilot h2 span,
+.cybershield-principles h2 span,
+.cybershield-roadmap h2 span,
+.cybershield-final h2 span {
+  color: #20b8d8;
+}
+
+.cybershield-hero-description {
+  max-width: 670px;
+  margin: 32px 0 0;
+  color: #9cb0be;
+  font-size: 17px;
+  line-height: 1.85;
+}
+
+.cybershield-hero-actions,
+.cybershield-final-actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 36px;
+}
+
+.cybershield-primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  min-height: 56px;
+  padding: 0 24px;
+  background: #2a9fd0;
+  color: #06111b;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    background 180ms ease;
+}
+
+.cybershield-primary-button:hover {
+  background: #20b8d8;
+  transform: translateY(-2px);
+}
+
+.cybershield-text-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #a7bac6;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-decoration: none;
+}
+
+.cybershield-text-button:hover {
+  color: #20b8d8;
+}
+
+.cybershield-hero-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  max-width: 600px;
+  margin-top: 25px;
+  color: #718796;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.cybershield-hero-note svg {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: #20b8d8;
+}
+
+/* HERO VISUAL */
+
+.cybershield-hero-visual {
+  min-height: 540px;
+  padding: 28px;
+  border: 1px solid #204760;
+  background: #0b1f33;
+  position: relative;
+  overflow: hidden;
+}
+
+.cybershield-visual-topline,
+.cybershield-visual-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #718796;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.17em;
+}
+
+.cybershield-visual-topline span:last-child {
+  color: #20b8d8;
+}
+
+.cybershield-core-system {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cybershield-orbit {
+  position: absolute;
+  border: 1px solid #16415a;
+  border-radius: 50%;
+}
+
+.cybershield-orbit-one {
+  width: 330px;
+  height: 330px;
+}
+
+.cybershield-orbit-two {
+  width: 235px;
+  height: 235px;
+}
+
+.cybershield-core {
+  width: 205px;
+  height: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #20b8d8;
+  background: #102f44;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0 10px rgba(32, 184, 216, 0.035);
+}
+
+.cybershield-core svg {
+  margin-bottom: 16px;
+  color: #20b8d8;
+}
+
+.cybershield-core strong {
+  font-size: 13px;
+  letter-spacing: 0.16em;
+}
+
+.cybershield-core span {
+  margin-top: 9px;
+  color: #718796;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.cybershield-node {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 17px 19px;
+  border: 1px solid #24516a;
+  background: #102a3d;
+  color: #a8bbc7;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.cybershield-node svg {
+  color: #20b8d8;
+}
+
+.cybershield-node-top {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+}
+
+.cybershield-node-row {
+  position: absolute;
+  bottom: 22px;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.cybershield-node-row .cybershield-node {
+  justify-content: center;
+  min-width: 0;
+  padding: 14px 8px;
+  font-size: 8px;
+}
+
+.cybershield-visual-footer {
+  padding-top: 20px;
+  border-top: 1px solid #204760;
+}
+
+.cybershield-visual-footer span:first-child {
+  color: #20b8d8;
+}
+
+/* INTRO */
+
+.cybershield-intro {
+  padding: 115px 0;
+}
+
+.cybershield-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  gap: 100px;
+}
+
+.cybershield-intro h2,
+.cybershield-section-heading h2,
+.cybershield-copilot h2,
+.cybershield-principles h2,
+.cybershield-roadmap h2,
+.cybershield-final h2 {
+  margin: 18px 0 0;
+  font-size: clamp(38px, 4vw, 61px);
+  line-height: 1.02;
+  letter-spacing: -0.045em;
+}
+
+.cybershield-intro-copy {
+  padding-top: 34px;
+}
+
+.cybershield-intro-copy p,
+.cybershield-section-heading > p,
+.cybershield-copilot-copy > p,
+.cybershield-principles-grid > div:first-child > p,
+.cybershield-roadmap-heading > p,
+.cybershield-final-shell > div:first-child > p {
+  color: #9cb0be;
+  font-size: 16px;
+  line-height: 1.85;
+}
+
+.cybershield-intro-copy p + p {
+  margin-top: 22px;
+}
+
+/* ARCHITECTURE */
+
+.cybershield-architecture {
+  padding: 110px 0;
+  background: #0a1d2d;
+  border-top: 1px solid #18384d;
+  border-bottom: 1px solid #18384d;
+}
+
+.cybershield-section-heading {
+  display: grid;
+  grid-template-columns: 1fr 0.62fr;
+  gap: 100px;
+  align-items: end;
+}
+
+.cybershield-section-heading > p {
+  margin: 0 0 3px;
+}
+
+.cybershield-pipeline {
+  margin-top: 65px;
+  border-top: 1px solid #204760;
+  border-left: 1px solid #204760;
+}
+
+.cybershield-pipeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 65px 55px 1fr;
+  gap: 22px;
+  min-height: 155px;
+  padding: 28px 80px 28px 28px;
+  border-right: 1px solid #204760;
+  border-bottom: 1px solid #204760;
+  background: #0b1f33;
+}
+
+.cybershield-pipeline-index {
+  color: #20b8d8;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.cybershield-pipeline-icon {
+  width: 43px;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #24516a;
+  color: #20b8d8;
+}
+
+.cybershield-pipeline-title {
+  margin-bottom: 10px;
+  color: #e8f1f5;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.cybershield-pipeline-content p {
+  max-width: 780px;
+  margin: 0;
+  color: #8298a7;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.cybershield-pipeline-arrow {
+  position: absolute;
+  right: 27px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #28546b;
+}
+
+.cybershield-architecture-note {
+  display: flex;
+  gap: 15px;
+  margin-top: 28px;
+  padding: 20px 23px;
+  border: 1px solid #204760;
+  background: #07131f;
+}
+
+.cybershield-architecture-note > svg {
+  flex: 0 0 auto;
+  margin-top: 2px;
+  color: #20b8d8;
+}
+
+.cybershield-architecture-note strong,
+.cybershield-architecture-note span {
+  display: block;
+}
+
+.cybershield-architecture-note strong {
+  margin-bottom: 5px;
+  color: #dce9ee;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+}
+
+.cybershield-architecture-note span {
+  color: #718796;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* CAPABILITIES */
+
+.cybershield-capabilities {
+  padding: 115px 0;
+}
+
+.cybershield-capability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 62px;
+  border-top: 1px solid #204760;
+  border-left: 1px solid #204760;
+}
+
+.cybershield-capability-card {
+  min-height: 270px;
+  padding: 28px;
+  border-right: 1px solid #204760;
+  border-bottom: 1px solid #204760;
+  background: #0b1f33;
+  transition:
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.cybershield-capability-card:hover {
+  background: #102a3d;
+  transform: translateY(-3px);
+}
+
+.cybershield-card-top {
+  display: flex;
+  justify-content: space-between;
+  color: #20b8d8;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+}
+
+.cybershield-card-top svg {
+  stroke-width: 1.5;
+}
+
+.cybershield-capability-card h3 {
+  margin: 48px 0 14px;
+  font-size: 20px;
+  letter-spacing: -0.02em;
+}
+
+.cybershield-capability-card p {
+  margin: 0;
+  color: #8298a7;
+  font-size: 13px;
+  line-height: 1.75;
+}
+
+.cybershield-card-line {
+  width: 35px;
+  height: 1px;
+  margin-top: 25px;
+  background: #20b8d8;
+}
+
+/* COPILOT */
+
+.cybershield-copilot {
+  padding: 110px 0;
+  background: #0a1d2d;
+  border-top: 1px solid #18384d;
+  border-bottom: 1px solid #18384d;
+}
+
+.cybershield-copilot-shell {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.cybershield-copilot-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  padding: 8px 11px;
+  border: 1px solid #24516a;
+  color: #8ea8b6;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.cybershield-copilot-badge svg {
+  color: #20b8d8;
+}
+
+.cybershield-copilot-points {
+  margin-top: 30px;
+}
+
+.cybershield-copilot-points div {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 12px 0;
+  border-bottom: 1px solid #18384d;
+  color: #9cb0be;
+  font-size: 13px;
+}
+
+.cybershield-copilot-points svg {
+  color: #20b8d8;
+}
+
+/* COPILOT INTERFACE */
+
+.cybershield-copilot-interface {
+  min-height: 490px;
+  border: 1px solid #24516a;
+  background: #07131f;
+}
+
+.cybershield-interface-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 23px;
+  border-bottom: 1px solid #204760;
+  color: #718796;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.cybershield-interface-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #dce9ee;
+}
+
+.cybershield-interface-brand svg {
+  color: #20b8d8;
+}
+
+.cybershield-interface-content {
+  padding: 34px;
+}
+
+.cybershield-interface-label {
+  margin-bottom: 18px;
+  color: #20b8d8;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.cybershield-analysis-card {
+  display: grid;
+  grid-template-columns: 43px 1fr;
+  gap: 15px;
+  margin-bottom: 12px;
+  padding: 18px;
+  border: 1px solid #204760;
+  background: #0b1f33;
+}
+
+.cybershield-analysis-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #102a3d;
+  color: #20b8d8;
+}
+
+.cybershield-analysis-card strong,
+.cybershield-analysis-card span {
+  display: block;
+}
+
+.cybershield-analysis-card strong {
+  margin-bottom: 6px;
+  color: #dce9ee;
+  font-size: 12px;
+}
+
+.cybershield-analysis-card span {
+  color: #718796;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.cybershield-interface-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 28px;
+  padding: 16px 18px;
+  border: 1px solid #24516a;
+  color: #536d7c;
+  font-size: 12px;
+}
+
+.cybershield-interface-input svg {
+  color: #20b8d8;
+}
+
+/* PRINCIPLES */
+
+.cybershield-principles {
+  padding: 110px 0;
+}
+
+.cybershield-principles-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 100px;
+}
+
+.cybershield-principles-grid > div:first-child > p {
+  max-width: 610px;
+  margin-top: 30px;
+}
+
+.cybershield-principle-list {
+  border-top: 1px solid #204760;
+}
+
+.cybershield-principle {
+  display: grid;
+  grid-template-columns: 35px 20px 1fr;
+  gap: 15px;
+  align-items: center;
+  min-height: 85px;
+  border-bottom: 1px solid #204760;
+}
+
+.cybershield-principle > span {
+  color: #20b8d8;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.cybershield-principle svg {
+  color: #20b8d8;
+}
+
+.cybershield-principle p {
+  margin: 0;
+  color: #9cb0be;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ROADMAP */
+
+.cybershield-roadmap {
+  padding: 100px 0;
+  background: #0a1d2d;
+  border-top: 1px solid #18384d;
+}
+
+.cybershield-roadmap-shell {
+  padding: 58px;
+  border: 1px solid #24516a;
+  background: #0b1f33;
+}
+
+.cybershield-roadmap-heading {
+  max-width: 780px;
+}
+
+.cybershield-roadmap-visual {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.cybershield-roadmap-line {
+  position: absolute;
+  top: 25px;
+  left: 9%;
+  right: 9%;
+  height: 1px;
+  background: #24516a;
+}
+
+.cybershield-roadmap-stage {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  color: #8da4b2;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.cybershield-roadmap-stage svg {
+  width: 51px;
+  height: 51px;
+  padding: 15px;
+  border: 1px solid #20b8d8;
+  background: #0b1f33;
+  color: #20b8d8;
+}
+
+/* FINAL */
+
+.cybershield-final {
+  padding: 110px 0 130px;
+}
+
+.cybershield-final-shell {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 60px;
+  padding: 55px;
+  border: 1px solid #24516a;
+  background: #0b1f33;
+}
+
+.cybershield-final-shell > div:first-child {
+  max-width: 720px;
+}
+
+.cybershield-final-shell > div:first-child > p {
+  max-width: 650px;
+  margin-top: 26px;
+}
+
+.cybershield-final-actions {
+  flex: 0 0 auto;
+  margin-top: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+  .cybershield-hero-grid,
+  .cybershield-copilot-shell,
+  .cybershield-principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cybershield-hero-visual {
+    max-width: 760px;
+  }
+
+  .cybershield-section-heading,
+  .cybershield-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .cybershield-intro-copy {
+    padding-top: 0;
+    max-width: 760px;
+  }
+
+  .cybershield-capability-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cybershield-final-shell {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .cybershield-final-actions {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 720px) {
+  .cybershield-container {
+    width: min(100% - 30px, 1320px);
+  }
+
+  .cybershield-hero {
+    padding: 75px 0 65px;
+  }
+
+  .cybershield-hero h1 {
+    font-size: clamp(42px, 12vw, 62px);
+  }
+
+  .cybershield-hero-description {
+    font-size: 15px;
+  }
+
+  .cybershield-hero-actions,
+  .cybershield-final-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .cybershield-primary-button {
+    width: 100%;
+  }
+
+  .cybershield-hero-visual {
+    min-height: 470px;
+    padding: 20px;
+  }
+
+  .cybershield-core-system {
+    min-height: 365px;
+  }
+
+  .cybershield-orbit-one {
+    width: 270px;
+    height: 270px;
+  }
+
+  .cybershield-orbit-two {
+    width: 200px;
+    height: 200px;
+  }
+
+  .cybershield-core {
+    width: 170px;
+    height: 170px;
+  }
+
+  .cybershield-node-row {
+    gap: 6px;
+  }
+
+  .cybershield-node-row .cybershield-node {
+    padding: 11px 5px;
+  }
+
+  .cybershield-node-row .cybershield-node span {
+    display: none;
+  }
+
+  .cybershield-intro,
+  .cybershield-architecture,
+  .cybershield-capabilities,
+  .cybershield-copilot,
+  .cybershield-principles,
+  .cybershield-final {
+    padding: 75px 0;
+  }
+
+  .cybershield-section-heading h2,
+  .cybershield-intro h2,
+  .cybershield-copilot h2,
+  .cybershield-principles h2,
+  .cybershield-roadmap h2,
+  .cybershield-final h2 {
+    font-size: 39px;
+  }
+
+  .cybershield-pipeline {
+    margin-top: 40px;
+  }
+
+  .cybershield-pipeline-item {
+    grid-template-columns: 40px 45px 1fr;
+    gap: 13px;
+    padding: 22px 45px 22px 18px;
+  }
+
+  .cybershield-pipeline-content p {
+    font-size: 12px;
+  }
+
+  .cybershield-capability-grid {
+    grid-template-columns: 1fr;
+    margin-top: 40px;
+  }
+
+  .cybershield-copilot-interface {
+    min-height: auto;
+  }
+
+  .cybershield-interface-content {
+    padding: 20px;
+  }
+
+  .cybershield-roadmap-shell {
+    padding: 28px 20px;
+  }
+
+  .cybershield-roadmap-visual {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px 15px;
+    margin-top: 45px;
+  }
+
+  .cybershield-roadmap-line {
+    display: none;
+  }
+
+  .cybershield-final-shell {
+    padding: 30px 22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cybershield-primary-button,
+  .cybershield-capability-card {
+    transition: none;
+  }
+}

@@ -1,0 +1,606 @@
+/* ============================================================
+   NISQ VANGUARD — CORPORATE TRAINING
+   Premium dark defence-technology styling
+   ============================================================ */
+
+.training-page {
+  min-height: 100vh;
+  background: #07131f;
+  color: #f2f7fa;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.training-hero {
+  padding: 110px 0 115px;
+  border-bottom: 1px solid #1d4056;
+}
+
+.training-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(470px, 0.95fr);
+  gap: 70px;
+  align-items: center;
+}
+
+.training-eyebrow {
+  margin: 0 0 20px;
+  color: #20b8d8;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.19em;
+  line-height: 1.4;
+}
+
+.training-hero-copy h1 {
+  max-width: 760px;
+  margin: 0;
+  color: #f2f7fa;
+  font-size: clamp(3.4rem, 5.7vw, 6.2rem);
+  font-weight: 800;
+  letter-spacing: -0.065em;
+  line-height: 0.94;
+}
+
+.training-hero-description {
+  max-width: 690px;
+  margin: 34px 0 0;
+  color: #9cb0be;
+  font-size: 1.04rem;
+  line-height: 1.85;
+}
+
+.training-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 38px;
+}
+
+.training-primary-button,
+.training-secondary-button {
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 24px;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-size: 0.73rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.training-primary-button {
+  background: #2a9fd0;
+  color: #06121d;
+}
+
+.training-primary-button:hover {
+  background: #20b8d8;
+  transform: translateY(-2px);
+}
+
+.training-secondary-button {
+  padding-right: 0;
+  padding-left: 0;
+  color: #9cb0be;
+}
+
+.training-secondary-button:hover {
+  color: #20b8d8;
+}
+
+.training-hero-metrics {
+  display: flex;
+  gap: 42px;
+  margin-top: 58px;
+  padding-top: 22px;
+  border-top: 1px solid #1d4056;
+}
+
+.training-hero-metrics div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.training-hero-metrics strong {
+  color: #20b8d8;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+}
+
+.training-hero-metrics span {
+  color: #718796;
+  font-size: 0.77rem;
+}
+
+/* ============================================================
+   ARCHITECTURE
+   ============================================================ */
+
+.training-architecture {
+  min-height: 500px;
+  padding: 28px;
+  background: #0b1f33;
+  border: 1px solid #1d4056;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.24);
+}
+
+.training-architecture-header,
+.training-architecture-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: #718796;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.training-architecture-header span:last-child,
+.training-architecture-footer span {
+  color: #20b8d8;
+}
+
+.training-architecture-body {
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.training-architecture-node {
+  min-width: 128px;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 14px;
+  box-sizing: border-box;
+  background: #102a3d;
+  border: 1px solid #28516a;
+  color: #9cb0be;
+}
+
+.training-architecture-node span {
+  font-size: 0.63rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.training-node-top {
+  flex-direction: column;
+}
+
+.training-node-top svg,
+.training-architecture-node svg {
+  color: #20b8d8;
+}
+
+.training-architecture-line {
+  width: 1px;
+  height: 24px;
+  background: #20b8d8;
+}
+
+.training-architecture-core {
+  width: 215px;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #102a3d;
+  border: 1px solid #20b8d8;
+  text-align: center;
+}
+
+.training-architecture-core svg {
+  color: #20b8d8;
+}
+
+.training-architecture-core strong {
+  color: #f2f7fa;
+  font-size: 0.7rem;
+  letter-spacing: 0.11em;
+}
+
+.training-architecture-core span {
+  color: #718796;
+  font-size: 0.62rem;
+}
+
+.training-architecture-row {
+  display: grid;
+  grid-template-columns: repeat(3, 128px);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.training-architecture-footer {
+  padding-top: 18px;
+  border-top: 1px solid #1d4056;
+}
+
+/* ============================================================
+   SECTIONS
+   ============================================================ */
+
+.training-section {
+  padding: 120px 0;
+  border-bottom: 1px solid #1d4056;
+}
+
+.training-section-secondary {
+  background: #0b1f33;
+}
+
+.training-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.72fr);
+  gap: 100px;
+}
+
+.training-intro-grid h2,
+.training-section-heading h2,
+.training-audience-grid h2,
+.training-cta h2 {
+  max-width: 780px;
+  margin: 0;
+  color: #f2f7fa;
+  font-size: clamp(2.5rem, 4.2vw, 4.4rem);
+  font-weight: 750;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.training-intro-copy {
+  padding-top: 52px;
+}
+
+.training-intro-copy p {
+  margin: 0 0 24px;
+  color: #9cb0be;
+  line-height: 1.85;
+}
+
+/* ============================================================
+   PROGRAMS
+   ============================================================ */
+
+.training-section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.5fr);
+  gap: 70px;
+  align-items: end;
+  margin-bottom: 60px;
+}
+
+.training-section-heading > p {
+  margin: 0;
+  color: #718796;
+  line-height: 1.8;
+}
+
+.training-program-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid #1d4056;
+  border-left: 1px solid #1d4056;
+}
+
+.training-program-card {
+  min-height: 285px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: #07131f;
+  border-right: 1px solid #1d4056;
+  border-bottom: 1px solid #1d4056;
+  transition:
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.training-program-card:hover {
+  background: #0b1f33;
+  transform: translateY(-3px);
+}
+
+.training-program-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #20b8d8;
+}
+
+.training-program-top span {
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.training-program-card h3 {
+  margin: 55px 0 14px;
+  color: #f2f7fa;
+  font-size: 1.22rem;
+  letter-spacing: -0.02em;
+}
+
+.training-program-card p {
+  margin: 0;
+  color: #8fa4b3;
+  font-size: 0.89rem;
+  line-height: 1.75;
+}
+
+.training-card-line {
+  width: 42px;
+  height: 1px;
+  margin-top: auto;
+  background: #20b8d8;
+}
+
+/* ============================================================
+   AUDIENCE
+   ============================================================ */
+
+.training-audience-section {
+  background: #0b1f33;
+}
+
+.training-audience-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 100px;
+}
+
+.training-audience-description {
+  max-width: 600px;
+  margin: 30px 0 0;
+  color: #9cb0be;
+  line-height: 1.85;
+}
+
+.training-audience-list {
+  border-top: 1px solid #1d4056;
+  border-left: 1px solid #1d4056;
+}
+
+.training-audience-item {
+  min-height: 70px;
+  display: grid;
+  grid-template-columns: 55px 1fr auto;
+  align-items: center;
+  gap: 18px;
+  padding: 0 20px;
+  border-right: 1px solid #1d4056;
+  border-bottom: 1px solid #1d4056;
+}
+
+.training-audience-item span {
+  color: #20b8d8;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.training-audience-item strong {
+  color: #d8e3e9;
+  font-size: 0.86rem;
+}
+
+.training-audience-item svg {
+  color: #20b8d8;
+}
+
+/* ============================================================
+   METHODOLOGY
+   ============================================================ */
+
+.training-methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid #1d4056;
+  border-left: 1px solid #1d4056;
+}
+
+.training-methodology-grid article {
+  min-height: 270px;
+  padding: 30px;
+  border-right: 1px solid #1d4056;
+  border-bottom: 1px solid #1d4056;
+}
+
+.training-methodology-grid article > span {
+  color: #20b8d8;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.training-methodology-grid h3 {
+  margin: 55px 0 15px;
+  color: #f2f7fa;
+  font-size: 1.02rem;
+  letter-spacing: 0.08em;
+}
+
+.training-methodology-grid p {
+  margin: 0;
+  color: #8fa4b3;
+  font-size: 0.87rem;
+  line-height: 1.75;
+}
+
+/* ============================================================
+   CTA
+   ============================================================ */
+
+.training-cta-section {
+  padding: 95px 0;
+  background: #0b1f33;
+}
+
+.training-cta {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.training-cta h2 {
+  max-width: 850px;
+}
+
+.training-cta .training-primary-button {
+  flex: 0 0 auto;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1180px) {
+  .training-hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(420px, 0.9fr);
+    gap: 45px;
+  }
+
+  .training-audience-grid {
+    gap: 55px;
+  }
+}
+
+@media (max-width: 980px) {
+  .training-hero-grid,
+  .training-intro-grid,
+  .training-audience-grid {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .training-hero {
+    padding: 80px 0;
+  }
+
+  .training-program-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .training-methodology-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .training-intro-copy {
+    padding-top: 0;
+  }
+
+  .training-section-heading {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .training-cta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .training-section {
+    padding: 80px 0;
+  }
+
+  .training-hero-copy h1 {
+    font-size: clamp(3rem, 13vw, 4.5rem);
+  }
+
+  .training-hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .training-hero-metrics {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .training-architecture {
+    min-height: 450px;
+    padding: 20px;
+  }
+
+  .training-architecture-row {
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 8px;
+  }
+
+  .training-architecture-node {
+    min-width: 0;
+    min-height: 65px;
+    padding: 8px;
+  }
+
+  .training-architecture-node span {
+    font-size: 0.52rem;
+  }
+
+  .training-architecture-core {
+    width: 175px;
+  }
+
+  .training-program-grid,
+  .training-methodology-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-audience-item {
+    grid-template-columns: 45px 1fr auto;
+  }
+
+  .training-primary-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .training-architecture-header,
+  .training-architecture-footer {
+    font-size: 0.54rem;
+  }
+
+  .training-architecture-header span:last-child {
+    display: none;
+  }
+
+  .training-architecture-footer span:last-child {
+    display: none;
+  }
+
+  .training-form-card {
+    padding: 20px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .training-primary-button,
+  .training-secondary-button,
+  .training-program-card {
+    transition: none;
+  }
+}

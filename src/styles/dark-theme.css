@@ -1,0 +1,530 @@
+/* ============================================================
+   NISQ VANGUARD
+   PREMIUM DARK DEFENCE TECHNOLOGY THEME
+   ============================================================ */
+
+:root {
+  --bg: #07131f;
+  --secondary-bg: #0b1f33;
+  --panel: #102a3d;
+
+  --navy: #f2f7fa;
+  --text-primary: #f2f7fa;
+  --text-secondary: #9cb0be;
+  --text-muted: #718796;
+
+  --border: #1d4056;
+
+  --blue: #2a9fd0;
+  --accent: #20b8d8;
+
+  --shadow: 0 18px 50px rgba(0, 0, 0, 0.32);
+}
+
+/* ============================================================
+   GLOBAL
+   ============================================================ */
+
+html {
+  background: var(--bg);
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   SHARED SECTIONS
+   ============================================================ */
+
+.section {
+  background: var(--bg);
+}
+
+.section-secondary {
+  background: var(--secondary-bg);
+}
+
+.section-heading h2,
+.page-hero h1,
+.placeholder-page h1 {
+  color: var(--text-primary);
+}
+
+.section-heading > p:last-child,
+.page-hero p:not(.eyebrow),
+.placeholder-page p:last-child {
+  color: var(--text-secondary);
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.site-header {
+  background: rgba(7, 19, 31, 0.94);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  color: var(--text-primary);
+}
+
+.brand-mark {
+  background: transparent;
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.brand-text strong {
+  color: var(--text-primary);
+}
+
+.brand-text small {
+  color: var(--text-muted);
+}
+
+.desktop-nav a {
+  color: var(--text-secondary);
+}
+
+.desktop-nav a:hover {
+  color: var(--blue);
+}
+
+.header-cta {
+  background: var(--blue);
+  border-color: var(--blue);
+  color: #06131e;
+}
+
+.header-cta:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.mobile-menu-button {
+  background: var(--panel);
+  border-color: var(--border);
+  color: var(--text-primary);
+}
+
+.mobile-nav {
+  background: var(--secondary-bg);
+  border-color: var(--border);
+}
+
+.mobile-nav a {
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.hero {
+  background: var(--bg);
+}
+
+.hero h1 {
+  color: var(--text-primary);
+}
+
+.hero-description {
+  color: var(--text-secondary);
+}
+
+.hero-visual {
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+
+.button {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: #06131e;
+}
+
+.button:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.button-secondary {
+  background: transparent;
+  border-color: var(--border);
+  color: var(--text-primary);
+}
+
+.button-secondary:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+/* ============================================================
+   ARCHITECTURE VISUAL
+   ============================================================ */
+
+.architecture-card {
+  background: var(--panel);
+  border-color: var(--border);
+  box-shadow: var(--shadow);
+}
+
+.architecture-card::before {
+  border-color: rgba(42, 159, 208, 0.18);
+}
+
+.architecture-label,
+.architecture-footer {
+  color: var(--text-muted);
+}
+
+.architecture-core {
+  background: rgba(16, 42, 61, 0.88);
+  border-color: var(--blue);
+}
+
+.architecture-core strong {
+  color: var(--text-primary);
+}
+
+.architecture-core span {
+  color: var(--text-secondary);
+}
+
+.architecture-lines {
+  color: var(--blue);
+}
+
+/* ============================================================
+   EDUCATE / ASSESS / DEFEND
+   ============================================================ */
+
+.pillar-card {
+  background: var(--panel);
+  border-color: var(--border);
+  box-shadow: none;
+}
+
+.pillar-card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+}
+
+.pillar-card h3 {
+  color: var(--text-primary);
+}
+
+.pillar-card p {
+  color: var(--text-secondary);
+}
+
+/* ============================================================
+   CTA
+   ============================================================ */
+
+.cta-section {
+  background: var(--secondary-bg);
+  color: var(--text-primary);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.cta-content h2 {
+  color: var(--text-primary);
+}
+
+.cta-content p:last-child {
+  color: var(--text-secondary);
+}
+
+.cta-content .eyebrow {
+  color: var(--accent);
+}
+
+.button-light {
+  background: var(--blue);
+  color: #06131e;
+}
+
+.button-light:hover {
+  background: var(--accent);
+}
+
+/* ============================================================
+   PLACEHOLDER PAGES
+   ============================================================ */
+
+.placeholder-page {
+  background: var(--bg);
+}
+
+.placeholder-page h1 {
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   SOLUTIONS
+   ============================================================ */
+
+.page-hero {
+  background: var(--secondary-bg);
+  border-color: var(--border);
+}
+
+.solutions-hero-panel {
+  background: var(--panel);
+  border-color: var(--border);
+  box-shadow: var(--shadow);
+}
+
+.solutions-hero-panel::before {
+  border-color: rgba(42, 159, 208, 0.18);
+}
+
+.solutions-panel-label,
+.solutions-panel-footer {
+  color: var(--text-secondary);
+}
+
+.solutions-panel-center {
+  background: #0c2639;
+  border-color: var(--border);
+  color: var(--blue);
+}
+
+.solutions-panel-center strong {
+  color: var(--text-primary);
+}
+
+.solutions-panel-center span {
+  color: var(--text-secondary);
+}
+
+.service-card {
+  background: var(--panel);
+  border-color: var(--border);
+  box-shadow: none;
+}
+
+.service-card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+}
+
+.service-card h3 {
+  color: var(--text-primary);
+}
+
+.service-card p {
+  color: var(--text-secondary);
+}
+
+.consulting-step,
+.methodology-step {
+  border-color: var(--border);
+}
+
+.consulting-step h3,
+.methodology-step h3 {
+  color: var(--text-primary);
+}
+
+.consulting-step p,
+.methodology-step p {
+  color: var(--text-secondary);
+}
+
+.responsible-testing {
+  background: var(--secondary-bg);
+  border-color: var(--border);
+}
+
+.responsible-testing h2 {
+  color: var(--text-primary);
+}
+
+.responsible-testing > p {
+  color: var(--text-secondary);
+}
+
+/* ============================================================
+   CONSULTING
+   ============================================================ */
+
+.consulting-page {
+  background: var(--bg);
+  color: var(--text-primary);
+}
+
+.consulting-hero h1 {
+  color: var(--text-primary);
+}
+
+.consulting-hero h1 span,
+.consulting-page h2 span {
+  color: var(--accent);
+}
+
+.section-heading-row h2,
+.consultation-intro h2,
+.responsible-testing-section h2 {
+  color: var(--text-primary);
+}
+
+.section-heading-row > p,
+.responsible-testing-section p,
+.consultation-intro > p {
+  color: var(--text-secondary);
+}
+
+.consulting-services-grid,
+.methodology-grid {
+  border-color: var(--border);
+}
+
+.consulting-service-card {
+  background: var(--panel);
+  border-color: var(--border);
+}
+
+.consulting-service-card:hover {
+  background: #123149;
+}
+
+.consulting-service-card h3 {
+  color: var(--text-primary);
+}
+
+.consulting-service-card p {
+  color: var(--text-secondary);
+}
+
+.methodology-step {
+  background: var(--secondary-bg);
+}
+
+.methodology-step h3 {
+  color: var(--text-primary);
+}
+
+.methodology-step p {
+  color: var(--text-secondary);
+}
+
+.responsible-testing-section,
+.consultation-section {
+  border-color: var(--border);
+}
+
+.text-link {
+  color: var(--blue);
+}
+
+/* ============================================================
+   CONSULTATION FORM
+   ============================================================ */
+
+.consultation-form-card {
+  background: var(--panel);
+  border-color: var(--border);
+  box-shadow: var(--shadow);
+}
+
+.form-field label {
+  color: var(--text-primary);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  background: #0b2234;
+  border-color: var(--border);
+  color: var(--text-primary);
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  background: #0d283d;
+  border-color: var(--blue);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.consent-field {
+  color: var(--text-secondary);
+}
+
+.form-field select option {
+  background: var(--panel);
+  color: var(--text-primary);
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+.site-footer {
+  background: #050e17;
+  border-top: 1px solid var(--border);
+}
+
+.footer-brand strong {
+  color: var(--text-primary);
+}
+
+.footer-brand span,
+.footer-grid > div:first-child > p {
+  color: var(--text-muted);
+}
+
+.footer-grid h3 {
+  color: var(--text-primary);
+}
+
+.footer-grid a {
+  color: var(--text-secondary);
+}
+
+.footer-grid a:hover {
+  color: var(--accent);
+}
+
+.footer-bottom {
+  border-color: rgba(156, 176, 190, 0.14);
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   ACCESSIBILITY
+   ============================================================ */
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: rgba(32, 184, 216, 0.25);
+  color: var(--text-primary);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}

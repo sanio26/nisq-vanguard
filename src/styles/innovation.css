@@ -1,0 +1,876 @@
+/* ============================================================
+   NISQ VANGUARD — INNOVATION
+   Premium dark defence-technology styling
+   ============================================================ */
+
+.innovation-page {
+  min-height: 100vh;
+  background: #07131f;
+  color: #f2f7fa;
+}
+
+/* ============================================================
+   SHARED
+   ============================================================ */
+
+.innovation-eyebrow {
+  margin: 0 0 22px;
+  color: #20b8d8;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+}
+
+.innovation-section {
+  padding: 120px 0;
+  border-bottom: 1px solid #1d4056;
+}
+
+.innovation-section-secondary {
+  background: #0b1f33;
+}
+
+.innovation-primary-button,
+.innovation-text-button {
+  min-height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-decoration: none;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.innovation-primary-button {
+  padding: 0 24px;
+  background: #2a9fd0;
+  color: #06121d;
+  border: 1px solid #2a9fd0;
+}
+
+.innovation-primary-button:hover {
+  background: #20b8d8;
+  border-color: #20b8d8;
+  transform: translateY(-2px);
+}
+
+.innovation-text-button {
+  padding: 0;
+  color: #9cb0be;
+  border: 0;
+}
+
+.innovation-text-button:hover {
+  color: #20b8d8;
+}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+
+.innovation-hero {
+  padding: 110px 0 115px;
+  border-bottom: 1px solid #1d4056;
+}
+
+.innovation-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.03fr) minmax(460px, 0.97fr);
+  gap: 72px;
+  align-items: center;
+}
+
+.innovation-hero-copy h1 {
+  max-width: 780px;
+  margin: 0;
+  color: #f2f7fa;
+  font-size: clamp(3.7rem, 6vw, 6.5rem);
+  font-weight: 800;
+  letter-spacing: -0.065em;
+  line-height: 0.92;
+}
+
+.innovation-hero-copy h1 span {
+  color: #20b8d8;
+}
+
+.innovation-hero-description {
+  max-width: 690px;
+  margin: 34px 0 0;
+  color: #9cb0be;
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.innovation-hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 38px;
+}
+
+.innovation-hero-meta {
+  display: flex;
+  gap: 42px;
+  margin-top: 58px;
+  padding-top: 22px;
+  border-top: 1px solid #1d4056;
+}
+
+.innovation-hero-meta div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.innovation-hero-meta strong {
+  color: #20b8d8;
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+}
+
+.innovation-hero-meta span {
+  color: #718796;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+}
+
+/* ============================================================
+   ARCHITECTURE VISUAL
+   ============================================================ */
+
+.innovation-architecture {
+  min-height: 540px;
+  padding: 28px;
+  background: #0b1f33;
+  border: 1px solid #1d4056;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.24);
+}
+
+.innovation-architecture-header,
+.innovation-architecture-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  color: #718796;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.innovation-architecture-header span:last-child,
+.innovation-architecture-footer span:first-child {
+  color: #20b8d8;
+}
+
+.innovation-architecture-stage {
+  position: relative;
+  min-height: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.innovation-orbit {
+  position: absolute;
+  border: 1px solid rgba(32, 184, 216, 0.13);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.innovation-orbit-one {
+  width: 390px;
+  height: 390px;
+}
+
+.innovation-orbit-two {
+  width: 260px;
+  height: 260px;
+}
+
+.innovation-architecture-node {
+  position: relative;
+  z-index: 2;
+  min-width: 138px;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 14px;
+  background: #102a3d;
+  border: 1px solid #28516a;
+  color: #9cb0be;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+  text-align: center;
+}
+
+.innovation-architecture-node svg {
+  color: #20b8d8;
+  flex: 0 0 auto;
+}
+
+.innovation-node-top {
+  margin-bottom: 12px;
+}
+
+.innovation-architecture-line.vertical {
+  position: relative;
+  z-index: 2;
+  width: 1px;
+  height: 28px;
+  background: #20b8d8;
+}
+
+.innovation-architecture-core {
+  position: relative;
+  z-index: 3;
+  width: 200px;
+  min-height: 138px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: #102a3d;
+  border: 1px solid #20b8d8;
+  box-shadow: 0 0 0 7px rgba(32, 184, 216, 0.035);
+}
+
+.innovation-architecture-core svg {
+  color: #20b8d8;
+}
+
+.innovation-architecture-core strong {
+  color: #f2f7fa;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+}
+
+.innovation-architecture-core span {
+  color: #718796;
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+}
+
+.innovation-architecture-branches {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.innovation-architecture-branch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.innovation-architecture-line.horizontal {
+  width: 1px;
+  height: 20px;
+  background: #20b8d8;
+}
+
+.innovation-architecture-footer {
+  padding-top: 18px;
+  border-top: 1px solid #1d4056;
+}
+
+/* ============================================================
+   INTRO
+   ============================================================ */
+
+.innovation-intro-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.72fr);
+  gap: 100px;
+}
+
+.innovation-intro-grid h2,
+.innovation-section-heading h2,
+.innovation-final-inner h2 {
+  max-width: 800px;
+  margin: 0;
+  color: #f2f7fa;
+  font-size: clamp(2.7rem, 4.5vw, 4.7rem);
+  font-weight: 750;
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+}
+
+.innovation-intro-copy {
+  padding-top: 48px;
+}
+
+.innovation-intro-copy p {
+  margin: 0 0 24px;
+  color: #9cb0be;
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.innovation-principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 48px;
+  border-top: 1px solid #1d4056;
+  border-left: 1px solid #1d4056;
+}
+
+.innovation-principles div {
+  min-height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px;
+  border-right: 1px solid #1d4056;
+  border-bottom: 1px solid #1d4056;
+}
+
+.innovation-principles span {
+  color: #20b8d8;
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.innovation-principles strong {
+  color: #d5e0e6;
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+}
+
+/* ============================================================
+   SECTION HEADING
+   ============================================================ */
+
+.innovation-section-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.5fr);
+  gap: 70px;
+  align-items: end;
+  margin-bottom: 60px;
+}
+
+.innovation-section-heading > p {
+  margin: 0;
+  color: #718796;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* ============================================================
+   RESEARCH AREAS
+   ============================================================ */
+
+.innovation-research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid #1d4056;
+  border-left: 1px solid #1d4056;
+}
+
+.innovation-research-card {
+  min-height: 295px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background: #07131f;
+  border-right: 1px solid #1d4056;
+  border-bottom: 1px solid #1d4056;
+  transition:
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.innovation-research-card:hover {
+  background: #102a3d;
+  transform: translateY(-3px);
+}
+
+.innovation-research-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #20b8d8;
+}
+
+.innovation-research-top span {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+
+.innovation-research-card h3 {
+  margin: 55px 0 14px;
+  color: #f2f7fa;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.innovation-research-card p {
+  margin: 0;
+  color: #8fa4b3;
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+.innovation-card-line {
+  width: 42px;
+  height: 1px;
+  margin-top: auto;
+  background: #20b8d8;
+}
+
+/* ============================================================
+   METHOD
+   ============================================================ */
+
+.innovation-method-heading {
+  margin-bottom: 60px;
+}
+
+.innovation-method-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  border-top: 1px solid #1d4056;
+  border-left: 1px solid #1d4056;
+}
+
+.innovation-method-grid article {
+  min-height: 290px;
+  padding: 30px;
+  border-right: 1px solid #1d4056;
+  border-bottom: 1px solid #1d4056;
+}
+
+.innovation-method-grid article > span {
+  color: #20b8d8;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.innovation-method-marker {
+  height: 34px;
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.innovation-method-marker span {
+  width: 8px;
+  height: 8px;
+  display: block;
+  border: 1px solid #20b8d8;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px rgba(32, 184, 216, 0.08);
+}
+
+.innovation-method-grid h3 {
+  margin: 22px 0 15px;
+  color: #f2f7fa;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+}
+
+.innovation-method-grid p {
+  margin: 0;
+  color: #8fa4b3;
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+/* ============================================================
+   CYBERSHIELD
+   ============================================================ */
+
+.innovation-cybershield-section {
+  padding: 120px 0;
+  background: #0b1f33;
+  border-bottom: 1px solid #1d4056;
+}
+
+.innovation-cybershield-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: 70px;
+  padding: 56px;
+  background: #07131f;
+  border: 1px solid #1d4056;
+}
+
+.innovation-cybershield-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.innovation-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 20px;
+  padding: 7px 10px;
+  border: 1px solid #28516a;
+  color: #9cb0be;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.innovation-status span {
+  width: 6px;
+  height: 6px;
+  display: block;
+  border-radius: 50%;
+  background: #20b8d8;
+}
+
+.innovation-cybershield-copy h2 {
+  margin: 0;
+  color: #f2f7fa;
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+}
+
+.innovation-cybershield-subtitle {
+  margin: 22px 0 0;
+  color: #20b8d8;
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.innovation-cybershield-description {
+  max-width: 610px;
+  margin: 22px 0 34px;
+  color: #9cb0be;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+/* ============================================================
+   CYBERSHIELD DIAGRAM
+   ============================================================ */
+
+.innovation-cybershield-diagram {
+  min-height: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  background: #0b1f33;
+  border: 1px solid #1d4056;
+}
+
+.innovation-diagram-label {
+  margin-bottom: 42px;
+  color: #718796;
+  font-size: 0.64rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.innovation-pipeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.innovation-pipeline-node {
+  width: 82px;
+  min-height: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: #102a3d;
+  border: 1px solid #28516a;
+  color: #9cb0be;
+}
+
+.innovation-pipeline-node svg {
+  color: #20b8d8;
+}
+
+.innovation-pipeline-node span {
+  font-size: 0.57rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.innovation-pipeline-node-final {
+  border-color: #20b8d8;
+  color: #f2f7fa;
+}
+
+.innovation-pipeline-arrow {
+  color: #20b8d8;
+  font-size: 1.2rem;
+}
+
+.innovation-diagram-note {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 48px;
+  padding-top: 18px;
+  border-top: 1px solid #1d4056;
+  color: #718796;
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.innovation-diagram-note span {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: #20b8d8;
+}
+
+/* ============================================================
+   FINAL CTA
+   ============================================================ */
+
+.innovation-final-section {
+  padding: 130px 0;
+  border-bottom: 1px solid #1d4056;
+}
+
+.innovation-final-inner {
+  max-width: 960px;
+}
+
+.innovation-final-inner h2 span {
+  color: #20b8d8;
+}
+
+.innovation-final-inner > p:not(.innovation-eyebrow) {
+  max-width: 650px;
+  margin: 30px 0 0;
+  color: #9cb0be;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.innovation-final-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 38px;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 1180px) {
+  .innovation-hero-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(400px, 0.9fr);
+    gap: 48px;
+  }
+
+  .innovation-cybershield-panel {
+    gap: 45px;
+    padding: 42px;
+  }
+
+  .innovation-pipeline {
+    gap: 7px;
+  }
+
+  .innovation-pipeline-arrow {
+    font-size: 1rem;
+  }
+
+  .innovation-pipeline-node {
+    width: 72px;
+  }
+}
+
+@media (max-width: 980px) {
+  .innovation-hero-grid,
+  .innovation-intro-grid,
+  .innovation-cybershield-panel {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .innovation-hero {
+    padding: 80px 0;
+  }
+
+  .innovation-architecture {
+    max-width: 720px;
+  }
+
+  .innovation-intro-copy {
+    padding-top: 0;
+  }
+
+  .innovation-research-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .innovation-method-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .innovation-section-heading {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .innovation-cybershield-panel {
+    padding: 36px;
+  }
+}
+
+@media (max-width: 700px) {
+  .innovation-section,
+  .innovation-cybershield-section,
+  .innovation-final-section {
+    padding: 80px 0;
+  }
+
+  .innovation-hero-copy h1 {
+    font-size: clamp(3rem, 13vw, 4.6rem);
+  }
+
+  .innovation-hero-actions,
+  .innovation-final-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .innovation-hero-meta {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .innovation-architecture {
+    min-height: 450px;
+    padding: 20px;
+  }
+
+  .innovation-orbit-one {
+    width: 300px;
+    height: 300px;
+  }
+
+  .innovation-orbit-two {
+    width: 205px;
+    height: 205px;
+  }
+
+  .innovation-architecture-branches {
+    width: 100%;
+    gap: 6px;
+  }
+
+  .innovation-architecture-node {
+    min-width: 0;
+    width: 100%;
+    font-size: 0.54rem;
+  }
+
+  .innovation-architecture-core {
+    width: 175px;
+  }
+
+  .innovation-principles {
+    grid-template-columns: 1fr;
+  }
+
+  .innovation-research-grid,
+  .innovation-method-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .innovation-research-card,
+  .innovation-method-grid article {
+    min-height: 250px;
+  }
+
+  .innovation-cybershield-panel {
+    padding: 26px 20px;
+  }
+
+  .innovation-cybershield-diagram {
+    min-height: 0;
+    padding: 24px 16px;
+  }
+
+  .innovation-pipeline {
+    flex-direction: column;
+  }
+
+  .innovation-pipeline-arrow {
+    transform: rotate(90deg);
+  }
+
+  .innovation-pipeline-node {
+    width: 100%;
+    min-height: 68px;
+    flex-direction: row;
+  }
+
+  .innovation-diagram-note {
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .innovation-architecture-header,
+  .innovation-architecture-footer {
+    font-size: 0.55rem;
+  }
+
+  .innovation-architecture-header span:last-child,
+  .innovation-architecture-footer span:last-child {
+    display: none;
+  }
+
+  .innovation-primary-button {
+    width: 100%;
+  }
+
+  .innovation-architecture-stage {
+    min-height: 400px;
+  }
+}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  .innovation-primary-button,
+  .innovation-text-button,
+  .innovation-research-card {
+    transition: none;
+  }
+}
