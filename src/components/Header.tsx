@@ -14,6 +14,10 @@ const navigation = [
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
+  const closeMobileMenu = () => {
+    setMobileOpen(false);
+  };
+
   return (
     <>
       <header className="site-header">
@@ -45,25 +49,33 @@ export default function Header() {
             ))}
           </nav>
 
-          <a
-            href="/contact"
-            className="header-cta"
-          >
-            BOOK A CONSULTATION <span>→</span>
-          </a>
+          <div className="header-actions">
+            <a
+              href="/login"
+              className="header-login"
+            >
+              LOGIN
+            </a>
+
+            <a
+              href="/contact"
+              className="header-cta"
+            >
+              BOOK A CONSULTATION <span>→</span>
+            </a>
+          </div>
 
           <button
             type="button"
-            className="mobile-menu-toggle"
-            onClick={() =>
-              setMobileOpen((current) => !current)
-            }
+            className="mobile-menu-button"
+            onClick={() => setMobileOpen((current) => !current)}
             aria-label={
               mobileOpen
                 ? "Close navigation menu"
                 : "Open navigation menu"
             }
             aria-expanded={mobileOpen}
+            aria-controls="mobile-navigation"
           >
             {mobileOpen ? (
               <X size={23} />
@@ -75,6 +87,7 @@ export default function Header() {
 
         {mobileOpen && (
           <nav
+            id="mobile-navigation"
             className="mobile-nav"
             aria-label="Mobile navigation"
           >
@@ -82,15 +95,24 @@ export default function Header() {
               <a
                 href={item.href}
                 key={item.href}
-                onClick={() => setMobileOpen(false)}
+                onClick={closeMobileMenu}
               >
                 {item.label}
               </a>
             ))}
 
             <a
+              href="/login"
+              className="mobile-login"
+              onClick={closeMobileMenu}
+            >
+              LOGIN
+            </a>
+
+            <a
               href="/contact"
-              onClick={() => setMobileOpen(false)}
+              className="mobile-consultation"
+              onClick={closeMobileMenu}
             >
               BOOK A CONSULTATION →
             </a>
